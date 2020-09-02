@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Para 1</p>
+    <form action="">
+        <input type="text" minlength="8">
+        <div id="error"></div>
+        <button>Submit</button>
+    </form>
+
+    <script>
+        let para = document.querySelector('p');
+        para.addEventListener('click' , function(event){
+            alert(para.innerText);
+        });
+        let input = document.querySelector('input');
+        input.addEventListener('input', function(event){
+            if(event.target.value.length>=8){
+                input.style.backgroundColor = "lightgreen";
+            }
+            if(event.target.value.length<8){
+                input.style.backgroundColor = "white";
+            }
+        });
+        let button = document.querySelector("button");
+        button.addEventListener('click', function(event){
+                let length = input.value.length;
+                if(length < 8){
+                event.preventDefault();
+                document.querySelector("#error").innerText= "Cannot submit form as length of input is less than 8";
+                }
+                else{
+                    document.querySelector("#error").innerText = "";
+                }
+        });
+        
+
+    </script>
+</body>
+</html>

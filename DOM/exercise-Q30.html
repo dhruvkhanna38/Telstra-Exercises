@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="number" id="input1" required> 
+        <input type="number" id="input2" required>
+        <label for="Sign">Choose a Sign</label>
+        <select name="Sign" id="operation">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="/">/</option>
+            <option value="*">*</option>
+        </select>
+        <button>Submit</button>
+    </form>
+    
+    <br>
+    <span></span>
+    <br>
+
+    
+
+    <script>
+        let input1 = document.querySelector("#input1");
+        let input2 = document.querySelector("#input2");
+        let operation = document.querySelector("#operation");
+
+        let button = document.querySelector("button");
+        button.addEventListener("click", function(event){
+            let result;
+            let sign = operation.value;
+            let number1 = Number(input1.value);
+            let number2 = Number(input2.value);
+            if(sign==="+"){
+                result = number1 + number2;
+            }
+            else if(sign ==="-"){
+                result = number1 - number2;
+            }
+            else if(sign === "*"){
+                result = number1 * number2;
+            }
+            else{
+                if(number2===0){
+                    result = undefined;
+                }
+                else{
+                    result = number1/number2;
+                }
+            }
+            document.querySelector("span").innerText= result;
+            event.preventDefault();
+        });
+
+        
+
+
+
+
+        
+    </script>
+</body>
+</html>

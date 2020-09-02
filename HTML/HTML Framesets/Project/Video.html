@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    video{
+        border: 2px solid blue;;
+    }
+    body{
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>Videos</h1>
+
+    <h3>Hover Down below for video 1</h2>
+    <video
+        src="v1.mp4"
+        id="v1"
+        poster="p1.jpg">
+    </video>
+
+    <br><br>
+
+    <h3>Hover Down below for video 2</h3>
+    <video
+        src="v2.mp4"
+        id="v2">
+    </video>
+
+    <script>
+        var vid= document.getElementById("v1");
+        vid.addEventListener("mouseenter", function(evt){
+            evt.target.play();
+        });
+        vid.addEventListener("mouseout", function(evt){
+            evt.target.pause();
+        });
+    
+        var vid2= document.getElementById("v2");
+
+        vid2.addEventListener("mouseenter", function(evt2){
+            evt2.target.play();
+        });
+        vid.addEventListener("mouseout", function(evt2){
+            evt2.target.pause();
+        });
+    </script>
+</body>
+</html>

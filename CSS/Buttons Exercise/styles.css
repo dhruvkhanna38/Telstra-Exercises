@@ -1,0 +1,54 @@
+button{
+    display:block;
+    margin-bottom: 20px;
+    min-width:150px;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-overflow: ellipsis;
+}
+
+.ok {
+    background-color:rgba(121, 219, 121, 0.8); 
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius:5px;
+  }
+
+  .buy{
+    background-color: rgba(102, 102, 218,0.8); 
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius:5px;
+  }
+
+  .delete{
+    background-color: rgba(212, 26, 26, 0.8); 
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius:5px;
+  }
+
+  button.ok:hover{
+    background-color:rgba(27, 197, 27,1);
+  }
+
+  button.buy:hover{
+    background-color: rgba(102, 102, 218,1);
+  }
+
+  button.delete:hover{
+    background-color: rgba(212, 26, 26, 1); 
+  }

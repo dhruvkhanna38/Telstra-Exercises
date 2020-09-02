@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                    h1 {
+                    text-align: center;
+                    font-family: Raleway;
+                    color: burlywood;
+                    }
+
+                    .container {
+                    display: flex;
+                    justify-content: center;
+                    }
+
+                    div.item {
+                    position: relative;
+                    float: left;
+                    overflow: hidden;
+                    margin: 10px 1%;
+                    min-width: 220px;
+                    max-width: 310px;
+                    width: 100%;
+                    background: #000000;
+                    text-align: center;
+                    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+                    }
+
+                    div.item * {
+                    box-sizing: border-box;
+                    }
+
+                    div.item img {
+                    max-width: 100%;
+                    vertical-align: top;
+                    height: 200px;
+                    }
+
+                    div.item:hover img {
+                    opacity: 0.3;
+                    filter: grayscale(100%);
+                    }
+
+                    div.item * {
+                    transition: all .5s ease-in-out;
+                    }  
+        </style>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+<body>
+            <h1>An Image Gallery</h1>
+                <div class="container">
+                <div class="item red">
+                    <img src="./images/cute-puppy.jpg"/>
+                </div>
+
+                <div class="item blue">
+                    <img src="./images/fireworks.jpg"/>
+                </div>
+
+                <div class="item green">
+                    <img src="./images/star.svg"/>
+                </div>
+                
+                </div>
+
+</body>
+</html>

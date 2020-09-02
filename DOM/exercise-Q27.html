@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .para3{
+            background-color: crimson;
+            color: white;
+        }
+
+        .lastPara{
+            border: 2px solid black;
+            padding:5px;
+            color: olive;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+        <p id="para-1">Para 1</p>
+        <p id="para-2">
+            Para 2
+        </p>
+        <p id="para-3">Para 3</p>
+
+    <script>
+        let para1 = document.querySelector("#para-1");
+        let para2 = document.querySelector("#para-2");
+        let para3 = document.querySelector("#para-3");
+
+        const newPara = document.createElement('p');
+        newPara.innerText = "New Paragraph";
+        document.body.insertBefore(newPara, para1);
+
+        const lastPara = document.createElement('p');
+        lastPara.innerText = "Last Paragraph";
+        document.body.appendChild(lastPara);
+
+        console.log(para2.innerHTML);
+
+        para2.innerHTML = `<span>span1</span> <span>span2</span>`;
+        console.log(para2.getAttribute('id'));
+        para2.setAttribute('id' , 'new-para-2');
+        console.log(para2.getAttribute('id'));
+        para2.setAttribute("name", "Paragraph2");
+        console.log(para2.getAttribute("name"));
+        para3.classList.add('para3');
+        lastPara.classList.add('lastPara');
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+nav{
+    padding: 0.25em 0.25em;
+    background-color: lightblue;
+    color: black;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+ display: inline-block;
+ padding: 0 0.25em 0 0;
+}

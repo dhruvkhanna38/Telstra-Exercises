@@ -1,0 +1,48 @@
+body{
+	width: 80%;
+	margin: 20px auto;
+	padding: 20px;
+}
+
+
+.date{
+	color: #3498db;
+	text-transform: uppercase;
+    font-weight: 900;
+    padding-bottom: 20px;
+}
+
+.panel{
+    border: 10px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px; 
+}
+
+.panel-heading{
+    text-transform: uppercase;
+}
+
+.panel-success{
+    border : 10px solid green;
+    border-radius: 10px;
+}
+
+.panel-error{
+    border : 10px solid crimson;
+    border-radius: 10px;
+}
+ 
+.success-heading{
+    background-color:green;
+    color:white;
+    padding-left: 10px;
+}
+
+.error-heading{
+    background-color: crimson;
+    color:white;
+    padding-left: 10px;
+}
+
+
